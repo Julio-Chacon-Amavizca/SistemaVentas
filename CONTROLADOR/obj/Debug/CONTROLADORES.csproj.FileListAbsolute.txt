@@ -1,0 +1,6 @@
+C:\Users\julio\source\repos\SistemaVentas\CONTROLADOR\bin\Debug\CONTROLADOR.dll
+C:\Users\julio\source\repos\SistemaVentas\CONTROLADOR\bin\Debug\CONTROLADOR.pdb
+C:\Users\julio\source\repos\SistemaVentas\CONTROLADOR\obj\Debug\CONTROLADORES.csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\SistemaVentas\CONTROLADOR\obj\Debug\CONTROLADORES.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\SistemaVentas\CONTROLADOR\obj\Debug\CONTROLADOR.dll
+C:\Users\julio\source\repos\SistemaVentas\CONTROLADOR\obj\Debug\CONTROLADOR.pdb
