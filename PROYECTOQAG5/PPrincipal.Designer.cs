@@ -38,6 +38,7 @@ namespace PROYECTOQAG5
             this.MenuVentas = new FontAwesome.Sharp.IconMenuItem();
             this.MenuGanaderia = new FontAwesome.Sharp.IconMenuItem();
             this.MenuContabilidad = new FontAwesome.Sharp.IconMenuItem();
+            this.reporteDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuUsuarios = new FontAwesome.Sharp.IconMenuItem();
             this.MenuInventario = new FontAwesome.Sharp.IconMenuItem();
             this.MenuPcategoria = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,7 @@ namespace PROYECTOQAG5
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_cerrarSesion = new System.Windows.Forms.Button();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.reporteDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PRODUCTO = new FontAwesome.Sharp.IconMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -68,9 +69,8 @@ namespace PROYECTOQAG5
             this.panel1.Controls.Add(this.Btn_close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1664, 41);
+            this.panel1.Size = new System.Drawing.Size(1248, 33);
             this.panel1.TabIndex = 6;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -84,10 +84,9 @@ namespace PROYECTOQAG5
             this.btn_minimizar.IconColor = System.Drawing.Color.White;
             this.btn_minimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_minimizar.IconSize = 20;
-            this.btn_minimizar.Location = new System.Drawing.Point(1576, 0);
-            this.btn_minimizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_minimizar.Location = new System.Drawing.Point(1182, 0);
             this.btn_minimizar.Name = "btn_minimizar";
-            this.btn_minimizar.Size = new System.Drawing.Size(44, 41);
+            this.btn_minimizar.Size = new System.Drawing.Size(33, 33);
             this.btn_minimizar.TabIndex = 101;
             this.btn_minimizar.TabStop = false;
             this.btn_minimizar.UseVisualStyleBackColor = false;
@@ -103,10 +102,9 @@ namespace PROYECTOQAG5
             this.Btn_close.IconColor = System.Drawing.Color.White;
             this.Btn_close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Btn_close.IconSize = 20;
-            this.Btn_close.Location = new System.Drawing.Point(1620, 0);
-            this.Btn_close.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_close.Location = new System.Drawing.Point(1215, 0);
             this.Btn_close.Name = "Btn_close";
-            this.Btn_close.Size = new System.Drawing.Size(44, 41);
+            this.Btn_close.Size = new System.Drawing.Size(33, 33);
             this.Btn_close.TabIndex = 100;
             this.Btn_close.TabStop = false;
             this.Btn_close.UseVisualStyleBackColor = false;
@@ -123,10 +121,10 @@ namespace PROYECTOQAG5
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_cerrarSesion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 41);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 33);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(292, 970);
+            this.panel2.Size = new System.Drawing.Size(272, 788);
             this.panel2.TabIndex = 7;
             // 
             // toolStripContainer1
@@ -135,10 +133,12 @@ namespace PROYECTOQAG5
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.menuStrip);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(247, 410);
-            this.toolStripContainer1.Location = new System.Drawing.Point(28, 233);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(232, 499);
+            this.toolStripContainer1.Location = new System.Drawing.Point(21, 175);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(247, 435);
+            this.toolStripContainer1.Size = new System.Drawing.Size(232, 499);
             this.toolStripContainer1.TabIndex = 9;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -151,12 +151,14 @@ namespace PROYECTOQAG5
             this.MenuGanaderia,
             this.MenuContabilidad,
             this.MenuUsuarios,
-            this.MenuInventario});
+            this.MenuInventario,
+            this.PRODUCTO});
             this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip.Size = new System.Drawing.Size(247, 410);
+            this.menuStrip.Size = new System.Drawing.Size(232, 499);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             this.menuStrip.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
@@ -171,7 +173,7 @@ namespace PROYECTOQAG5
             this.MenuVentas.IconSize = 50;
             this.MenuVentas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MenuVentas.Name = "MenuVentas";
-            this.MenuVentas.Size = new System.Drawing.Size(240, 69);
+            this.MenuVentas.Size = new System.Drawing.Size(180, 69);
             this.MenuVentas.Text = "VENTAS";
             this.MenuVentas.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.MenuVentas.Click += new System.EventHandler(this.MenuVentas_Click);
@@ -186,7 +188,7 @@ namespace PROYECTOQAG5
             this.MenuGanaderia.IconSize = 50;
             this.MenuGanaderia.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MenuGanaderia.Name = "MenuGanaderia";
-            this.MenuGanaderia.Size = new System.Drawing.Size(240, 69);
+            this.MenuGanaderia.Size = new System.Drawing.Size(180, 69);
             this.MenuGanaderia.Text = "GANADERIA";
             this.MenuGanaderia.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.MenuGanaderia.Click += new System.EventHandler(this.MenuGanaderia_Click);
@@ -203,10 +205,18 @@ namespace PROYECTOQAG5
             this.MenuContabilidad.IconSize = 50;
             this.MenuContabilidad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MenuContabilidad.Name = "MenuContabilidad";
-            this.MenuContabilidad.Size = new System.Drawing.Size(240, 69);
+            this.MenuContabilidad.Size = new System.Drawing.Size(180, 69);
             this.MenuContabilidad.Text = "CONTABILIDAD";
             this.MenuContabilidad.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.MenuContabilidad.Click += new System.EventHandler(this.MenuContabilidad_Click);
+            // 
+            // reporteDeVentasToolStripMenuItem
+            // 
+            this.reporteDeVentasToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reporteDeVentasToolStripMenuItem.Name = "reporteDeVentasToolStripMenuItem";
+            this.reporteDeVentasToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.reporteDeVentasToolStripMenuItem.Text = "Reporte de Ventas";
+            this.reporteDeVentasToolStripMenuItem.Click += new System.EventHandler(this.reporteDeVentasToolStripMenuItem_Click);
             // 
             // MenuUsuarios
             // 
@@ -218,7 +228,7 @@ namespace PROYECTOQAG5
             this.MenuUsuarios.IconSize = 50;
             this.MenuUsuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MenuUsuarios.Name = "MenuUsuarios";
-            this.MenuUsuarios.Size = new System.Drawing.Size(240, 69);
+            this.MenuUsuarios.Size = new System.Drawing.Size(180, 69);
             this.MenuUsuarios.Text = "USUARIOS";
             this.MenuUsuarios.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.MenuUsuarios.Click += new System.EventHandler(this.MenuUsuarios_Click);
@@ -237,7 +247,7 @@ namespace PROYECTOQAG5
             this.MenuInventario.IconSize = 50;
             this.MenuInventario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MenuInventario.Name = "MenuInventario";
-            this.MenuInventario.Size = new System.Drawing.Size(240, 69);
+            this.MenuInventario.Size = new System.Drawing.Size(180, 69);
             this.MenuInventario.Text = "CONFIGURACIONES";
             this.MenuInventario.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.MenuInventario.Click += new System.EventHandler(this.MenuInventario_Click);
@@ -275,11 +285,10 @@ namespace PROYECTOQAG5
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 54;
-            this.iconPictureBox1.Location = new System.Drawing.Point(28, 836);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox1.IconSize = 44;
+            this.iconPictureBox1.Location = new System.Drawing.Point(21, 679);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(73, 54);
+            this.iconPictureBox1.Size = new System.Drawing.Size(55, 44);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.iconPictureBox1.TabIndex = 24;
             this.iconPictureBox1.TabStop = false;
@@ -292,10 +301,10 @@ namespace PROYECTOQAG5
             this.MenuAcercade.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MenuAcercade.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuAcercade.ForeColor = System.Drawing.Color.Gainsboro;
-            this.MenuAcercade.Location = new System.Drawing.Point(108, 836);
-            this.MenuAcercade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MenuAcercade.Location = new System.Drawing.Point(81, 679);
+            this.MenuAcercade.Margin = new System.Windows.Forms.Padding(2);
             this.MenuAcercade.Name = "MenuAcercade";
-            this.MenuAcercade.Size = new System.Drawing.Size(167, 54);
+            this.MenuAcercade.Size = new System.Drawing.Size(125, 44);
             this.MenuAcercade.TabIndex = 23;
             this.MenuAcercade.Text = "Acerca de";
             this.MenuAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -306,9 +315,10 @@ namespace PROYECTOQAG5
             // 
             this.lbl_Usuario.AutoSize = true;
             this.lbl_Usuario.ForeColor = System.Drawing.Color.White;
-            this.lbl_Usuario.Location = new System.Drawing.Point(36, 186);
+            this.lbl_Usuario.Location = new System.Drawing.Point(37, 151);
+            this.lbl_Usuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Usuario.Name = "lbl_Usuario";
-            this.lbl_Usuario.Size = new System.Drawing.Size(82, 16);
+            this.lbl_Usuario.Size = new System.Drawing.Size(63, 13);
             this.lbl_Usuario.TabIndex = 22;
             this.lbl_Usuario.Text = "labelusuario";
             // 
@@ -316,9 +326,10 @@ namespace PROYECTOQAG5
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(105, 159);
+            this.label1.Location = new System.Drawing.Point(79, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 16);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 21;
             this.label1.Text = "Bienvenido";
             // 
@@ -326,10 +337,10 @@ namespace PROYECTOQAG5
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::PROYECTOQAG5.Properties.Resources.png_transparent_logo_business_logistics_service_business_angle_hand_service;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 44);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 97);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -342,10 +353,10 @@ namespace PROYECTOQAG5
             this.btn_cerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_cerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrarSesion.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_cerrarSesion.Location = new System.Drawing.Point(0, 905);
-            this.btn_cerrarSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cerrarSesion.Location = new System.Drawing.Point(0, 735);
+            this.btn_cerrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cerrarSesion.Name = "btn_cerrarSesion";
-            this.btn_cerrarSesion.Size = new System.Drawing.Size(292, 65);
+            this.btn_cerrarSesion.Size = new System.Drawing.Size(272, 53);
             this.btn_cerrarSesion.TabIndex = 5;
             this.btn_cerrarSesion.Text = "Cerrar Sesion";
             this.btn_cerrarSesion.UseVisualStyleBackColor = false;
@@ -354,29 +365,34 @@ namespace PROYECTOQAG5
             // PanelContenedor
             // 
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(292, 41);
-            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelContenedor.Location = new System.Drawing.Point(272, 33);
+            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1372, 970);
+            this.PanelContenedor.Size = new System.Drawing.Size(976, 788);
             this.PanelContenedor.TabIndex = 8;
             // 
-            // reporteDeVentasToolStripMenuItem
+            // PRODUCTO
             // 
-            this.reporteDeVentasToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reporteDeVentasToolStripMenuItem.Name = "reporteDeVentasToolStripMenuItem";
-            this.reporteDeVentasToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
-            this.reporteDeVentasToolStripMenuItem.Text = "Reporte de Ventas";
-            this.reporteDeVentasToolStripMenuItem.Click += new System.EventHandler(this.reporteDeVentasToolStripMenuItem_Click);
+            this.PRODUCTO.AutoSize = false;
+            this.PRODUCTO.ForeColor = System.Drawing.Color.White;
+            this.PRODUCTO.IconChar = FontAwesome.Sharp.IconChar.Smile;
+            this.PRODUCTO.IconColor = System.Drawing.Color.White;
+            this.PRODUCTO.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PRODUCTO.IconSize = 50;
+            this.PRODUCTO.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.PRODUCTO.Name = "PRODUCTO";
+            this.PRODUCTO.Size = new System.Drawing.Size(180, 69);
+            this.PRODUCTO.Text = "PRODUCTO";
+            this.PRODUCTO.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
             // PPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1664, 1011);
+            this.ClientSize = new System.Drawing.Size(1248, 821);
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PPrincipal";
@@ -421,5 +437,6 @@ namespace PROYECTOQAG5
         private System.Windows.Forms.ToolStripMenuItem MenuPproducto;
         private System.Windows.Forms.ToolStripMenuItem nEGOCIOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteDeVentasToolStripMenuItem;
+        private FontAwesome.Sharp.IconMenuItem PRODUCTO;
     }
 }

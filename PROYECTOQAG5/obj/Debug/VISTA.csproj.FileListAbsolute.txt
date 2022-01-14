@@ -42,4 +42,3 @@ C:\Users\julio\source\repos\SistemaVentas\PROYECTOQAG5\obj\Debug\PROYECTOQAG5.PB
 C:\Users\julio\source\repos\SistemaVentas\PROYECTOQAG5\obj\Debug\PROYECTOQAG5.PAcercaDe.resources
 C:\Users\julio\source\repos\SistemaVentas\PROYECTOQAG5\obj\Debug\PROYECTOQAG5.PDetalleVentas.resources
 C:\Users\julio\source\repos\SistemaVentas\PROYECTOQAG5\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\julio\source\repos\SistemaVentas\PROYECTOQAG5\obj\Debug\VISTA.csproj.CopyComplete

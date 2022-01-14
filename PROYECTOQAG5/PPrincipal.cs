@@ -203,5 +203,7 @@ namespace PROYECTOQAG5
         {
             AbrirFormulario(MenuContabilidad, new PDetalleVentas());
         }
+
+
     }
 }
